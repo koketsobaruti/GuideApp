@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LocationOptions"
+    android:background="#ebf3f7"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="13dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Select the types of places you are interested in visiting:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:id="@+id/imageView2"
+        android:layout_width="337dp"
+        android:layout_height="504dp"
+        android:background="@drawable/rounded_square"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/foodButton"
+            android:layout_width="194dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Food"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/hotelSpaButton"
+            android:layout_width="272dp"
+            android:layout_height="62dp"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:text="School"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/shoppingBtn"
+            android:layout_width="194dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Shopping"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/entertainmentBtn"
+            android:layout_width="272dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Movie Theater"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/libraryBtn"
+            android:layout_width="194dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Library"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/barsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:gravity="center"
+            android:text="Bars and Clubs"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/historicBtn"
+            android:layout_width="194dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Museum"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:backgroundTint="@color/unselectedOption" />
+
+
+    </LinearLayout>
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="120dp"
+                android:layout_height="39dp"
+                android:background="@drawable/rounded_square"
+                android:text="next"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:backgroundTint="#FB8205" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>

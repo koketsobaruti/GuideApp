@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.History"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="History"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/searchHistBtn"
+            android:layout_width="193dp"
+            android:layout_height="50dp"
+            android:text="Search History"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/histSelected" />
+
+        <Button
+            android:id="@+id/histSuggestionsBtn"
+            android:layout_width="197dp"
+            android:layout_height="50dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:text="Suggestions"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/histUnselected" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentHistory"
+        android:name="com.example.guideapp.fragments.History_List"
+        android:layout_width="394dp"
+        android:layout_height="484dp" />
+
+    <Space
+        android:layout_width="55dp"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

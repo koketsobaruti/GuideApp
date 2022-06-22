@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Guide</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">330043008468624</string>
+    <string name="fb_login_protocol_scheme">fb330043008468624</string>
+    <string name="title_activity_navigation">MainActivity</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_bookmarks">Bookmarks</string>
+    <string name="title_map">Map</string>
+    <string name="title_history">History</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="map_key">AIzaSyA3mnQFSM39ZwEamw9X_yrDk35M5DX87Rg</string>
+    <string name="addBtn">ADD +</string>
+    <string name="title_activity_popup">PopupActivity</string>
+    <!-- Strings used for com.example.guideapp.fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <style name="ChipTextApperance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <string-array name="types">
+        <item>accounting</item>
+        <item>airport</item>
+        <item>amusement park</item>
+        <item>aquarium</item>
+        <item>art gallery</item>
+        <item>atm</item>
+        <item>bakery</item>
+        <item>bank</item>
+        <item>bar</item>
+        <item>beauty salon</item>
+        <item>bicycle store</item>
+        <item>book store</item>
+        <item>bowling alley</item>
+        <item>bus station</item>
+        <item>cafe</item>
+        <item>campground</item>
+        <item>car dealer</item>
+        <item>car rental</item>
+        <item>car repair</item>
+        <item>car wash</item>
+        <item>casino</item>
+        <item>cemetery</item>
+        <item>church</item>
+        <item>city hall</item>
+        <item>clothing store</item>
+        <item>convenience store</item>
+        <item>courthouse</item>
+        <item>dentist</item>
+        <item>department store</item>
+        <item>doctor</item>
+        <item>drugstore</item>
+        <item>electrician</item>
+        <item>electronics store</item>
+        <item>embassy</item>
+        <item>fire station</item>
+        <item>florist</item>
+        <item>funeral home</item>
+        <item>furniture store</item>
+        <item>gas station</item>
+        <item>gym</item>
+        <item>hair care</item>
+        <item>hardware store</item>
+        <item>hindu temple</item>
+        <item>home goods store</item>
+        <item>hospital</item>
+        <item>insurance agency</item>
+        <item>jewelry store</item>
+        <item>laundry</item>
+        <item>lawyer</item>
+        <item>library</item>
+        <item>light rail station</item>
+        <item>liquor store</item>
+        <item>local government office</item>
+        <item>locksmith</item>
+        <item>lodging</item>
+        <item>meal delivery</item>
+        <item>meal takeaway</item>
+        <item>mosque</item>
+        <item>movie rental</item>
+        <item>movie theater</item>
+        <item>moving company</item>
+        <item>museum</item>
+        <item>night club</item>
+        <item>painter</item>
+        <item>park</item>
+        <item>parking</item>
+        <item>pet store</item>
+        <item>pharmacy</item>
+        <item>physiotherapist</item>
+        <item>plumber</item>
+        <item>police</item>
+        <item>post office</item>
+        <item>primary school</item>
+        <item>real estate agency</item>
+        <item>restaurant</item>
+        <item>roofing contractor</item>
+        <item>rv park</item>
+        <item>school</item>
+        <item>secondary school</item>
+        <item>shoe store</item>
+        <item>shopping mall</item>
+        <item>spa</item>
+        <item>stadium</item>
+        <item>storage</item>
+        <item>store</item>
+        <item>subway station</item>
+        <item>supermarket</item>
+        <item>synagogue</item>
+        <item>taxi stand</item>
+        <item>tourist attraction</item>
+        <item>train station</item>
+        <item>transit station</item>
+        <item>travel agency</item>
+        <item>university</item>
+        <item>veterinary care</item>
+        <item>zoo</item>
+    </string-array>
+</resources>

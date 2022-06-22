@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2FFFFFF"
+    tools:context=".fragments.Map">
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment
+        android:id="@+id/googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/googleMap"
+        app:layout_constraintVertical_bias="0.024">
+
+            <TextView
+                android:id="@+id/sv_location"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#BEFFFFFF"
+                android:hint="Search"
+                android:textSize="20dp"
+                android:elevation="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:padding="8dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="84dp"
+                android:layout_height="34dp"
+                android:background="@drawable/rounded_square"
+                android:backgroundTint="#0074e8"
+                android:gravity="center"
+                android:text="13 mins"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.659"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDuration"
+                android:layout_width="84dp"
+                android:layout_height="34dp"
+                android:background="@drawable/rounded_square"
+                android:backgroundTint="#FB8205"
+                android:gravity="center"
+                android:text="13 mins"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="384dp"
+            android:layout_height="537dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.009"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:id="@+id/myLocationBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Return"
+                    app:backgroundTint="@color/white"
+                    app:srcCompat="@drawable/ic_baseline_my_location_24" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <ImageButton
+                    android:id="@+id/resetMapBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Return"
+                    android:src="@drawable/reset"
+                    app:backgroundTint="#B5FB8205" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <ImageButton
+                    android:id="@+id/cycleBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Cycle"
+                    app:backgroundTint="#EE4E64DD"
+                    app:srcCompat="@drawable/ic_baseline_directions_bike" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <ImageButton
+                    android:id="@+id/drivingBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Drive"
+                    app:backgroundTint="#EE4E64DD"
+                    app:srcCompat="@drawable/ic_baseline_drive" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <ImageButton
+                    android:id="@+id/walkingBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/round_button"
+                    android:contentDescription="Walk"
+                    app:backgroundTint="#EE4E64DD"
+                    app:srcCompat="@drawable/ic_baseline_directions_walk" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:id="@+id/btnZoomIn"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#E1EBF8FB"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:backgroundTint="#CEEBF8FB"
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <ImageButton
+                    android:id="@+id/btnZoomOut"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="#E1EBF8FB"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:backgroundTint="#CEEBF8FB"
+                    app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="@color/Grey"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp" />
+
+                    <TextView
+                        android:id="@+id/tempTxtMap"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="50 F"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

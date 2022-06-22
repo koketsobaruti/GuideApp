@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/profile_icon"
+        android:title="@string/title_profile"
+        android:orderInCategory="3"/>
+
+    <item
+        android:id="@+id/navigation_bookmarks"
+        android:icon="@drawable/bookmarks_icon"
+        android:title="@string/title_bookmarks"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/map_icon"
+        android:title="@string/title_map"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history_icon"
+        android:title="@string/title_history"
+        android:orderInCategory="4"/>
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/schedule_icon"
+        android:title="@string/title_schedule"
+        android:orderInCategory="5"/>
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context="com.example.guideapp.popUps.Unit_Popup">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/bg_pop_up"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="266dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/exitBtn"
+                android:layout_width="48dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a unit of measurement to use to finish signing up."
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(This option can be changed later)"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#636363"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Space
+                android:layout_width="17dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/metricBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FB8205"
+                android:text="cm/km"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="52dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/imperialBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="ft/miles"
+                android:backgroundTint="#FFC107"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

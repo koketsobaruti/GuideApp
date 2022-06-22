@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="197dp"
+        android:background="@drawable/bg_pop_up"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/collapseActionView"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:completionHint="Suggestions"
+                android:completionThreshold="2"
+                android:hint="Search here..."
+                android:popupBackground="#E5E9EA" />
+
+            <Button
+                android:id="@+id/addList"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:drawableRight="@drawable/ic_baseline_check_24"
+                android:gravity="center"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lv_item"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_gravity="left" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/exitDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:background="@drawable/bg_round"
+                android:text="DONE"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="#FB8205" />
+    </LinearLayout>
+
+
+</LinearLayout>

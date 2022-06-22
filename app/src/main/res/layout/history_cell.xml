@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="372dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:background="@drawable/rounded_bookmarks_square"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/locationHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Location text"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/descriptionHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/addressHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Address text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtOpenHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Closed"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating : "
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txtRatingHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating : "
+                            android:textColor="#263480"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="26dp"
+            android:layout_height="13dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

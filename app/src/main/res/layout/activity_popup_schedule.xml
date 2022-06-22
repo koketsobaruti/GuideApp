@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context="com.example.guideapp.popUps.Schedule_PopUp">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:background="@drawable/bg_pop_up"
+        android:backgroundTint="#545454"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pop_up"
+            android:backgroundTint="#545454"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Schedule"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/exitSchedule"
+                android:layout_width="48dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_baseline_close_241" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Enter location"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Space
+                android:layout_width="95dp"
+                android:layout_height="28dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scheduleLocationTxt"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_pop_up"
+                android:gravity="left"
+                android:hint="Location"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scheduleAddressTxt"
+                android:layout_width="259dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_pop_up"
+                android:gravity="left"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity=""
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/descriptionScheduleTxt"
+                    android:layout_width="261dp"
+                    android:layout_height="89dp"
+                    android:background="@drawable/bg_pop_up"
+                    android:gravity="left"
+                    android:hint="What is the occassion?"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="50–100 max characters"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:gravity="right"
+                android:text="Set a time and date"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateScheduleTxt"
+                    android:layout_width="101dp"
+                    android:layout_height="31dp"
+                    android:background="@drawable/bg_pop_up"
+                    android:gravity="center"
+                    android:hint="dd/mm/YYYY"
+                    android:textColor="#604F4F"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/datePickerSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+                <TextView
+                    android:id="@+id/timeScheduleTxt"
+                    android:layout_width="95dp"
+                    android:layout_height="31dp"
+                    android:background="@drawable/bg_pop_up"
+                    android:gravity="center"
+                    android:hint="HH:mm"
+                    android:textColor="#604F4F"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/timePickerSchedule"
+                    android:layout_width="36dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Would you like to set an alarm?"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Switch
+                android:id="@+id/alarmScheduleSwitch"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Switch"
+                android:textColor="@color/white"
+                android:textColorHighlight="#FFC107"
+                android:textColorLink="#FF9800" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveScheduleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Save"
+            app:backgroundTint="#FF9800" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
